@@ -1,0 +1,11 @@
+.App {
+  display: grid;
+  gap: 1rem;
+  //   this is ugly code
+  //   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  // use repeat()
+  //   grid-template-columns: repeat(12, 1fr);
+  //   this is good but our grid is not responsive
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  //   minmax() function will give a single card minimum 240px upto 1fr
+}
